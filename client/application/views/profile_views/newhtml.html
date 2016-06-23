@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>houda</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Includes for this lightbox -->
+        <link rel="stylesheet" href="css/lightbox.css">
+        <!-- FlexSlider pieces -->
+        <link rel="stylesheet" href="default.css" type="text/css" />
+        <meta name="viewport" content="width=device-width ,height=device-height, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo-header">
+                    </div>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Bilkheria <span class="subhead">Houda</span></a>
+                    </div><!--navbar-header-->
+                    <div class="collapse navbar-collapse" id="collapse">
+                        <ul class= "nav navbar-nav navbar-right">
+                            <li class="active menu" id="home"><a href="#home" >Accueil</a></li>                        
+                            <li class="menu" id="mariage"><a href="#mariage">Nos Packs Mariages</a></li>
+                            <li class="menu" id="soins"><a href="#services">Nos services</a></li>
+                            <li class="menu" id="contact2"><a href="#2">Press</a></li>
+                            <li class="menu" id="price"><a href="#price">Tarifs</a></li>
+                            <li class="menu" id="contact"><a href="#contact" >Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main" >
+            <!--       ******************        home page  *************************-->
+            <div id="home_page" class="page home_page">
+                <div class="">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="http://mania.tn/houda/images/slider/2.png" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="http://mania.tn/houda/images/slider/4.png" alt="...">
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--home-->
+            <!--       ******************            contact page  *************************-->
+            <div class="page" id="contact_page">
+                <div class="content container  top-page-header">
+                    <div class="page-header-content">
+                        <h2>Contact</h2>
+                    </div>
+                </div>
+                <div class="contact-content contact-contents">
+                    <div class="content container box-content">
+                        <div>
+                            <form class="form-horizontal ">
+                                <div class="form-group gemail">
+                                    <label for="email" class="col-sm-2 control-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group gsex">
+                                    <label  class="col-sm-2 control-label"></label>
+                                    <div class="col-sm-10">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" id="inlineRadio1" value="Mme" checked=""> Mme
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" id="inlineRadio2" value="Mlle"> Mlle
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" id="inlineRadio3" value="Mr"> Mr
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group gname ">
+                                    <label for="name" class="col-sm-2 control-label">Nom</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Nom" >
+                                    </div>
+                                </div>
+                                <div class="form-group gfname">
+                                    <label for="fname" class="col-sm-2 control-label">Prénom</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="fname" name="prenom" placeholder="Prénom" aria-describedby="inputSuccess2Status">
+                                    </div>
+                                </div>
+                                <div class="form-group naissance">
+                                    <label for="days" class="col-sm-2 control-label">Date de naissance</label>
+                                    <div class="col-sm-10">
+                                        <label class="select-inline">
+                                            <select  id="years" name="annee"  class="form-control" ></select>
+                                        </label>
+                                        <label class="select-inline">
+                                            <select  id="months" name="moi" class="form-control"></select>
+                                        </label>
+                                        <label class="select-inline">
+                                            <select  id="days" name="jour"  class="form-control"></select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group gtel">
+                                    <label for="tel" class="col-sm-2 control-label">Téléphone</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="tel" name="tel" placeholder="Téléphone">
+                                    </div>
+                                </div>
+                                <div class="form-group gpays">
+                                    <label for="pays" class="col-sm-2 control-label">Pays</label>
+                                    <div class="col-sm-10">
+                                        <select name="pays" id="pays"  class="form-control"> 
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group gville">
+                                    <label for="ville" class="col-sm-2 control-label">Ville</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="ville" id="ville" placeholder="Ville">
+                                    </div>
+                                </div>
+                                <div class="form-group gsujet ">
+                                    <label for="sujet" class="col-sm-2 control-label">Sujet</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="10" name="sujet" id="sujet"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">Envoyer</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row-alert ">
+                            <div class=" alert alert-success">
+                                <strong></strong> Votre message a été envoyé avec succès.
+                            </div>
+                            <div class="alert alert-danger">
+                                <strong></strong> Erreur de validation. Veuillez vérifier les champs et soumettre à nouveau.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--       ******************                      Mariage page  *************************-->
+            <div class="page" id="mariage_page">
+                <div class="content container  top-page-header">
+                    <div class="page-header-content">
+                        <h2>Mariage</h2>
+                    </div>
+                    
+                </div>
+                 <div class="contact-content">
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav active"><a href="#A" data-toggle="tab">Onglerie</a></li>
+                        <li class="nav"><a href="#B" data-toggle="tab">Soins des visages</a></li>
+                        <li class="nav"><a href="#C" data-toggle="tab">Coiffure</a></li>
+                        <li class="nav"><a href="#D" data-toggle="tab">Épilation</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="A">
+                            <div class="contain">
+                                <div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/1.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/4.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/5.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/7.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/26.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/10.jpg" style="height: 41%;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/20.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/2.jpg" style="height: 401px;">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/11.jpg" style="height: 18%;">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/12.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/16.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/18.jpg" style="height: 46%;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/23.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/29.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/24.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/28.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/25.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/9.jpg" >
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/35.jpg" style="height: 239px;  width: 100%;" >
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/30.jpg" style="height: 533px;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/31.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/32.jpg" style="height: 535px;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/17.jpg"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/22.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/13.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/33.jpg"> 
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/27.jpg"></div>
+
+                                </div>
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;          
+                                <br><br><br>        
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="B">
+                            <div class="contain">
+                                <div>
+
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/26.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/10.jpg" style="height: 41%;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/20.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/2.jpg" style="height: 401px;">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/11.jpg" style="height: 18%;">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/12.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/16.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/18.jpg" style="height: 46%;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/23.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/29.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/24.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/28.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/25.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/9.jpg" >
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/35.jpg" style="height: 239px;  width: 100%;" >
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/30.jpg" style="height: 533px;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/31.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/32.jpg" style="height: 535px;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/17.jpg"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/22.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/13.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/33.jpg"> 
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/27.jpg"></div>
+
+                                </div>
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;          
+                                <br><br><br>    </div></div>
+                        <div class="tab-pane fade" id="C">
+                            <div class="contain">
+                                <div>
+
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/12.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/16.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/18.jpg" style="height: 46%;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/23.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/29.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/24.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/28.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/25.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/9.jpg" >
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/35.jpg" style="height: 239px;  width: 100%;" >
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/30.jpg" style="height: 533px;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/31.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/32.jpg" style="height: 535px;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/17.jpg"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/22.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/13.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/33.jpg"> 
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/27.jpg"></div>
+
+                                </div>
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;          
+                                <br><br><br>    
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="D">
+                            <div class="contain">
+                                <div>
+
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/9.jpg" >
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/35.jpg" style="height: 239px;  width: 100%;" >
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/30.jpg" style="height: 533px;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/31.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/32.jpg" style="height: 535px;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/17.jpg"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/22.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/13.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/33.jpg"> 
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/27.jpg"></div>
+
+                                </div>
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;          
+                                <br><br><br>    
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--       ******************   soins page  *************************-->
+            <div class="page" id="soins_page">
+                <div class="content container  top-page-header">
+                    <div class="page-header-content">
+                        <h2>Soins specifiques</h2>
+                    </div>
+                </div>
+                <div class="contact-content">
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav active"><a href="#A" data-toggle="tab">Onglerie</a></li>
+                        <li class="nav"><a href="#B" data-toggle="tab">Soins des visages</a></li>
+                        <li class="nav"><a href="#C" data-toggle="tab">Coiffure</a></li>
+                        <li class="nav"><a href="#D" data-toggle="tab">Épilation</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="A">
+                            <div class="contain">
+                                <div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/1.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/4.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/5.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/7.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/26.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/10.jpg" style="height: 41%;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/20.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/2.jpg" style="height: 401px;">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/11.jpg" style="height: 18%;">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/12.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/16.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/18.jpg" style="height: 46%;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/23.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/29.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/24.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/28.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/25.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/9.jpg" >
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/35.jpg" style="height: 239px;  width: 100%;" >
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/30.jpg" style="height: 533px;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/31.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/32.jpg" style="height: 535px;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/17.jpg"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/22.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/13.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/33.jpg"> 
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/27.jpg"></div>
+
+                                </div>
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;          
+                                <br><br><br>        
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="B">
+                            <div class="contain">
+                                <div>
+
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/26.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/10.jpg" style="height: 41%;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/20.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/2.jpg" style="height: 401px;">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/11.jpg" style="height: 18%;">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/12.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/16.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/18.jpg" style="height: 46%;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/23.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/29.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/24.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/28.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/25.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/9.jpg" >
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/35.jpg" style="height: 239px;  width: 100%;" >
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/30.jpg" style="height: 533px;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/31.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/32.jpg" style="height: 535px;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/17.jpg"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/22.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/13.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/33.jpg"> 
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/27.jpg"></div>
+
+                                </div>
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;          
+                                <br><br><br>    </div></div>
+                        <div class="tab-pane fade" id="C">
+                            <div class="contain">
+                                <div>
+
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/12.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/16.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/18.jpg" style="height: 46%;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/23.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/29.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/24.jpg">
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/28.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/25.jpg" ></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/9.jpg" >
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/35.jpg" style="height: 239px;  width: 100%;" >
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/30.jpg" style="height: 533px;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/31.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/32.jpg" style="height: 535px;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/17.jpg"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/22.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/13.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/33.jpg"> 
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/27.jpg"></div>
+
+                                </div>
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;          
+                                <br><br><br>    
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="D">
+                            <div class="contain">
+                                <div>
+
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/9.jpg" >
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/35.jpg" style="height: 239px;  width: 100%;" >
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/30.jpg" style="height: 533px;"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/31.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/32.jpg" style="height: 535px;"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/17.jpg"></div> 
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/22.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/13.jpg"></div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/33.jpg"> 
+                                        <img class="thumbnail img-responsive" src="http://mania.tn/houda/images/soins/27.jpg"></div>
+
+                                </div>
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;  
+                                &nbsp;          
+                                <br><br><br>    
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!--       ******************   Press  *************************-->
+            <div class="page" id="contact2_page">
+                <div class="content container  top-page-header">
+                    <div class="page-header-content">
+                        <h2>Press</h2>
+                    </div>
+                </div>
+                <div class="contact-content">
+                    <br> 
+                    <ul   class="video">
+                        <li>
+                            <div id="fb-root"></div><script>(function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id))
+                                        return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/HoudaBelkheriaEsthetique/videos/1455846288008289/" data-width="200"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/HoudaBelkheriaEsthetique/videos/1455846288008289/"><p>Interview sur &quot; Maquillages &amp; Correction &quot;</p>Posté par <a href="https://www.facebook.com/HoudaBelkheriaEsthetique/">Houda Belkheria</a> sur&nbsp;<a href="https://www.facebook.com/HoudaBelkheriaEsthetique/videos/1455846288008289/">mercredi 30 juillet 2014</a></blockquote></div></div>
+                        </li>
+                        <li> 
+                            <div id="fb-root"></div><script>(function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id))
+                                        return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/HoudaBelkheriaEsthetique/videos/1456301351296116/" data-width="200"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/HoudaBelkheriaEsthetique/videos/1456301351296116/"><p>Interview sur &quot; Maquillages &amp; Correction &quot;</p>Posté par <a href="https://www.facebook.com/HoudaBelkheriaEsthetique/">Houda Belkheria</a> sur&nbsp;<a href="https://www.facebook.com/HoudaBelkheriaEsthetique/videos/1456301351296116/">jeudi 31 juillet 2014</a></blockquote></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--       ******************  End press start price pages  *************************-->
+            <div class="page" id="price_page">
+                <div class="content container  top-page-header">
+                    <div class="page-header-content">
+                        <h2>Tarifs</h2>
+                    </div>
+                </div>
+
+                <div class="contact-content">
+                    <div class="container">
+                        <div class="table-responsive">
+
+                            <ul class="nav nav-pills">
+                                <li class="nav active"><a href="#1" data-toggle="tab">1</a></li>
+                                <li class="nav"><a href="#2" data-toggle="tab">2</a></li>
+
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="1">
+                                    <table id="mytable" class="table table-bordred table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class="col">Désignation</th>
+                                                <th class="col">Prix</th>
+                                                <th class="col">Désignation</th>
+                                                <th class="col">Prix</th>
+                                            </tr>
+                                        </thead><tbody id="blocprod"> 
+                                            <tr id="left_detail04">
+                                                <td>Cils a cils naturel</td>
+                                                <td>150</td>
+                                                <td>Cils a cils</td>
+                                                <td>60</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Remplissage faux ongles avec gel</td>
+                                                <td>60</td>
+                                                <td>Remplissage faux ongles</td>
+                                                <td>45</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Coupe enfant brushing</td>
+                                                <td>10</td>
+                                                <td>Coupe enfant</td>
+                                                <td>5</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Coupe homme</td>
+                                                <td>10</td>
+                                                <td>Pose foulard</td>
+                                                <td>25</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Application</td>
+                                                <td>18</td>
+                                                <td>Extension de cheveux</td>
+                                                <td>350</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Remplissage tatouage sourcil</td>
+                                                <td>150</td>
+                                                <td>Tatouage sourcil</td>
+                                                <td>250</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Faux cils</td>
+                                                <td>40</td>
+                                                <td>Grain de beauté</td>
+                                                <td>40</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>F.T décolleté</td>
+                                                <td>25</td>
+                                                <td>Maquillage+coiffure+extension</td>
+                                                <td>350</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Maquillage+coiffure+babyliss</td>
+                                                <td>160</td>
+                                                <td>Maquillage du jour</td>
+                                                <td>60</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Maquillage soirée</td>
+                                                <td>80</td>
+                                                <td>Maquillage+brushing soirée</td>
+                                                <td>120</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Baby liss coiffé</td>
+                                                <td>80</td>
+                                                <td>Chignon simple</td>
+                                                <td>50</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Kératine cheuveux long</td>
+                                                <td>600</td>
+                                                <td>Kératine cheveux mi long</td>
+                                                <td>500</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Kératine cheveux court</td>
+                                                <td>400</td>
+                                                <td>Effaceur</td>
+                                                <td>40</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Extenso cheuveux long</td>
+                                                <td>120</td>
+                                                <td>Extenso cheveux courts</td>
+                                                <td>100</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Bain de charme ou rinçage</td>
+                                                <td>35</td>
+                                                <td>Méche double</td>
+                                                <td>150</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Méches platinum l’Oréal</td>
+                                                <td>120</td>
+                                                <td>Méches cristal libanais l’Oréal</td>
+                                                <td>90</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Coloration cheveux long INOA</td>
+                                                <td>90</td>
+                                                <td>Coloration cheveux court INOA</td>
+                                                <td>75</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Coloration racine INOA</td>
+                                                <td>55</td>
+                                                <td>Coloration majirel cheveux long</td>
+                                                <td>75</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Coloration racine majirel</td>
+                                                <td>35</td>
+                                                <td>Coupe brushing</td>
+                                                <td>30</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Coupe pointe brushing</td>
+                                                <td>20</td>
+                                                <td>Soin capilaire</td>
+                                                <td>15</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Brushing avec fer</td>
+                                                <td>15</td>
+                                                <td>Brushing soirée</td>
+                                                <td>25</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Brushing extension</td>
+                                                <td>12</td>
+                                                <td>Brushing cheveux long</td>
+                                                <td>10</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Brushing</td>
+                                                <td>8</td>
+                                                <td>Brushing abonnement payé</td>
+                                                <td>0</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Abonnement brushing ch court</td>
+                                                <td>25</td>
+                                                <td>Abonnement brushing ch long</td>
+                                                <td>30</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Capsule avec gel</td>
+                                                <td>15</td>
+
+                                                <td>Capsule</td>
+                                                <td>10</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Pose gel couleur</td>
+                                                <td>40</td>
+
+                                                <td>Fixateur UV</td>
+                                                <td>10</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Massage 1 h</td>
+                                                <td>45</td>
+                                                <td>Massage 30min</td>
+                                                <td>30</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Cure soin de visage 6 séances</td>
+                                                <td>450</td>
+
+                                                <td>Soin de visage(Lilia Beauty Center)</td>
+                                                <td>120</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Soin visage+que spécifique</td>
+                                                <td>85</td>
+                                                <td>Soin de visage spécifique</td>
+                                                <td>75</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Soin de visage basique</td>
+                                                <td>65</td>
+                                                <td>Soin catio vital</td>
+                                                <td>85</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Coup d’éclat</td>
+                                                <td>40</td>
+                                                <td>Gel permanente</td>
+                                                <td>70</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Faux ongles permanente avec gel</td>
+                                                <td>120</td>
+                                                <td>Faux ongles permanente</td>
+                                                <td>100</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Design ou strass</td>
+                                                <td>2</td>
+
+                                                <td>Pose french</td>
+                                                <td>8</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Pose vernis fantaisie</td>
+                                                <td>15</td>
+                                                <td>Pose vernis</td>
+                                                <td>8</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Soin paraffine</td>
+                                                <td>10</td>
+
+                                                <td>Pédicure médical</td>
+                                                <td>35</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Pédicure</td>
+                                                <td>30</td>
+                                                <td>Manucure</td>
+                                                <td>20</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Pose vernis paye abonnement</td>
+                                                <td>0</td>
+                                                <td>Pose french paye abonnement</td>
+                                                <td>0</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Abonnement pose french</td>
+                                                <td>28</td>
+                                                <td>Abonnement pose vernis</td>
+                                                <td>28</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilation sourcils au fil</td>
+                                                <td>5</td>
+                                                <td>Epilation visage au fil</td>
+                                                <td>20</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilation pourtour visage au fil</td>
+                                                <td>10</td>
+                                                <td>Epilation lèvre sup et menton au fil</td>
+                                                <td>5</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilation total</td>
+                                                <td>120</td>
+                                                <td>Epilation fesse</td>
+                                                <td>10</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilation dos</td>
+                                                <td>15</td>
+                                                <td>Epilation ventre</td>
+                                                <td>10</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilation maillot mexicain</td>
+                                                <td>15</td>
+                                                <td>Epilation maillot complet</td>
+                                                <td>25</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilatuon demi jambe</td>
+                                                <td>15</td>
+                                                <td>Epilation jambe</td>
+                                                <td>20</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Abonnement épilation sourcils</td>
+                                                <td>25</td>
+                                                <td>Epilation sourcils payé abonnement</td>
+                                                <td>0</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilation sourcils</td>
+                                                <td>8</td>
+                                                <td>Epilation lèvres</td>
+                                                <td>5</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilation menton</td>
+                                                <td>5</td>
+                                                <td>Epilation pourtour visage</td>
+                                                <td>20</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Epilation visage</td>
+                                                <td>35</td>
+                                                <td>Épilation bras</td>
+                                                <td>18</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <td>Épilation demi bras</td>
+                                                <td>13</td>
+                                                <td>Epilation aisselles</td>
+                                                <td>7</td>
+                                            </tr><tr id="left_detail04" style="display: none;">   
+                                                <!--bloc-prod-->
+                                            </tr>  
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="tab-pane fade " id="2">
+                                    <table id="mytable" class="table table-bordred table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class="col">Désignation</th>
+                                                <th class="col">Prix</th>
+                                                <th class="col">Désignation</th>
+                                                <th class="col">Prix</th>
+                                            </tr>
+                                        </thead><tbody id="blocprod"> 
+                                            <tr id="left_detail04">
+                                                <td>Cils a cils naturel</td>
+                                                <td>150</td>
+                                                <td>Cils a cils</td>
+                                                <td>60</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Remplissage faux ongles avec gel</td>
+                                                <td>60</td>
+                                                <td>Remplissage faux ongles</td>
+                                                <td>45</td>
+                                            </tr><tr id="left_detail04">  
+                                                <td>Coupe enfant brushing</td>
+                                                <td>10</td>
+                                                <td>Coupe enfant</td>
+                                                <td>5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--   End  content price pages -->
+        <!--       ****************** End  price pages  *************************-->
+        <!--       ******************    main *************************-->
+    </div>
+</div><!-- main -->
+<!--       ******************        footer  *************************-->
+<footer>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" >
+        <div class="content container">
+            <ul  class= "nav navbar-nav navbar-right">
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left nav-pills">
+                <li>
+                    <a href="https://www.facebook.com/HoudaBelkheriaEsthetique/?fref=ts"   target="_blank" class="btn btn-social-icon btn-facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"  target="_blank" class="btn btn-social-icon">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/"  target="_blank" class="btn btn-social-icon">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/kwiks.js"></script>
+<script src="js/send_email.js"></script>
+<script src="js/lightbox.js"></script>
+<!-- Hook up the FlexSlider -->
+<script type="text/javascript">
+                                var Main = Main || {};
+                                jQuery(window).load(function () {
+                                    window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+                                    Main.gallery = new Gallery();
+                                    jQuery(window).resize(function () {
+                                        Main.gallery.update();
+                                    });
+                                });
+                                function Gallery() {
+                                    var self = this,
+                                            container = jQuery('.flexslider'),
+                                            clone = container.clone(false);
+                                    this.init = function () {
+                                        if (responsiveFlag == 'block') {
+                                            var slides = container.find('.slides');
+                                            slides.kwicks({
+                                                max: 700,
+                                                spacing: 0
+                                            }).find('li > a').click(function () {
+                                                return false;
+                                            });
+                                        } else {
+                                            container.flexslider();
+                                        }
+                                    }
+                                    this.update = function () {
+                                        var currentState = jQuery('#responsiveFlag').css('display');
+                                        if (responsiveFlag != currentState) {
+                                            responsiveFlag = currentState;
+                                            container.replaceWith(clone);
+                                            container = clone;
+                                            clone = container.clone(false);
+                                            this.init();
+                                        }
+                                    }
+                                    this.init();
+                                }
+</script>
+</body>
+</html>
